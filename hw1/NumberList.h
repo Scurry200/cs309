@@ -7,6 +7,7 @@ using namespace std;
 
 class NumberList {
 public:
+//child classes, virtual keyword
 	virtual void addNumberToList(int num) = 0;
 	virtual void removeNumberFromFront() = 0;
 	virtual void removeNumberFromBack() = 0;
@@ -14,6 +15,7 @@ public:
 	virtual size_t getSizeOfList() = 0;
 	virtual void clear() = 0;
 
+	//numberlist.cpp only, no virtual keyword
 	void printNumbers();
 	void computeNextFibonacciAndInsertAtEnd();
 	void computeNFibonacci(size_t n);
